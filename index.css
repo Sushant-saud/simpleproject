@@ -1,0 +1,60 @@
+body{
+    background-image:linear-gradient(blue,white);
+    height:100vh;
+}
+#myImg{
+    cursor:pointer;
+    transition: .5s;
+    border-radius:50px;
+}
+#myImg:hover{
+    opacity:0.5;
+    color:blueviolet;
+}
+.container{
+    position:fixed;
+    top:0px;
+    left:0px;
+    width:100%;
+    
+    padding-top: 50px;
+    background-image:radial-gradient(#fff,blue);
+    display: none;
+}
+#img{
+    margin:auto;
+    width:70%;
+    display:block;
+    max-width:650px;
+    animation: display 1s;
+
+  
+
+}
+#description{
+
+    font-size:35px;
+    color:#fff;
+    position:absolute;
+    top:7%;
+    left:8%;
+    animation: display 1s;
+
+}
+@keyframes display{
+from{
+    transform:scale(0);
+
+}to{
+    transform:scale(1);
+}
+}
+
+#close{
+    position:absolute;
+    top:25px;
+    right:40px;
+    color:white;
+    font-size:50px;
+    cursor:pointer;
+}
